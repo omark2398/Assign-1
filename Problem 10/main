@@ -1,0 +1,40 @@
+/* 
+ * File:   main.cpp
+ * Author: Omar Kaayal
+ *
+ * Created on June 28, 2015, 5:21 PM
+ */
+
+#include <cstdlib>
+#include <stdio.h>
+#include <iostream>
+#include <string>
+using namespace std;
+
+//User Libraries 
+
+//Global Constants 
+
+//Function Prototype 
+
+//Execution begins here!
+
+int main(int argc, char** argv) 
+{
+    
+//Declare Variables 
+    
+string name = ": Omar Kaayal ";
+string address = ": 4800 Magnolia Avenue"; //RCC address
+string city = ": Riverside";
+string zip_code = ": 92506";
+string telephone_number = ": (951) 222-8000";
+string college_major = ": Bioengineering”; 
+  
+//output
+cout << "Name " <<name<< "\nAddress " <<address<< "\nCity " <<city<< "\nZip Code "
+<<zip_code<< "\nTelephone # " <<telephone_number<< "\nCollege Major " <<college_major<<endl;
+    
+    //Exit Stage Right!
+    return 0;
+}

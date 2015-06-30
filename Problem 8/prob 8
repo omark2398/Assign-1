@@ -1,0 +1,43 @@
+/* 
+ * File:   
+ * Author: Omar Kaayal
+ *
+ * Created on June 28, 2015, 4:52 PM
+ */
+
+#include <cstdlib>
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+//User Libraries 
+
+//Global Constants 
+
+//Function Prototype 
+
+//Execution begins here!
+
+int main(int argc, char** argv) 
+{
+    
+//Declare Variables 
+float square_ft_per_acre = 43560; //square feet per acre
+float square_ft_per_m = 10.7639; //square feet per meter
+float acre = 0.25; //quarter of an acre
+   
+//calculate square feet 
+float square_ft = square_ft_per_acre * acre;
+    
+//output square feet
+cout << "There are " << square_ft << " square feet";
+    
+//calculate square meters
+float square_m = square_ft /square_ft_per_m ;
+    
+//output square meters
+cout << " and " << square_m<< " square meters " << "in 1/4 acres of land. " <<endl;
+    
+//Exit Stage Right!
+return 0;
+}

@@ -1,0 +1,56 @@
+/* 
+ * File:   main.cpp
+ * Author: Bilal Abu-Seraj
+ *
+ * Created on June 29, 2015, 10:47 a.m.
+ */
+
+
+//System Libraries
+#include <iostream> //I/O Library
+#include <cstdlib>
+#include <stdio.h>
+using namespace std;//Namespace for iostream
+
+//User Libraries
+
+//Global Constants
+
+//Function Prototypes
+
+//Execution Begins Here!
+int main(int argc, char** argv) {
+   
+ //Declare and Initialize Variables
+float meal_charge = 44.5; //meal cost in $'s (tax included)
+float meal_tax = .0675; //tax
+float percentage_tip = 0.15; // 15% of meal cost and tax
+   
+ //Calculate meal cost without tax
+float meal_cost = meal_charge/ (1 + meal_tax);
+ 
+//Output meal cost which is meal without tax
+    cout<<"meal cost is " << "$" << meal_cost << endl;
+
+//Calculate tax
+float tax = meal_charge - meal_cost;
+
+//Output tax
+    cout<<"tax is " << "$" << tax << endl;
+
+//Calculate tip
+float meal_and_tip = (1 + percentage_tip) * meal_charge;
+float tip = meal_and_tip - meal_charge;
+ 
+//Output tip
+    cout<<"tip is " << "$" << tip << endl;
+
+//calculate total of bill
+float total = tip + tax + meal_cost;
+
+//total of bill
+cout << "total of bill is " << "$" << total <<endl;
+
+    
+	return 0;
+}
